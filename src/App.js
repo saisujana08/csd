@@ -2,6 +2,7 @@ import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Login from './login';
 import Signup from './Signup';
+import Next from './secure_qn';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Login />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
+        <Route path='/Next' element={<Next />}></Route>
       </Routes>
     </BrowserRouter>
   );
